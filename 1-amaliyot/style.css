@@ -1,0 +1,140 @@
+/* ==========================================================
+   Mehr Boshpana — 1-amaliy ish (matn ko'rinishi)
+   Palitra: white, #23403a, #8a4b2a, #f3ead9
+   ========================================================== */
+
+/* Ranglar (CSS o'zgaruvchilari) */
+:root {
+  --asosiy: #23403a;   /* to'q yashil — matn va sarlavha foni */
+  --aksent: #8a4b2a;   /* jigarrang — havolalar */
+  --fon: #f3ead9;      /* och qum rang — sahifa foni */
+}
+
+/* Umumiy (teg selektori) */
+body {
+  background-color: var(--fon);
+  color: var(--asosiy);
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Sarlavha qismi */
+header {
+  background-color: var(--asosiy);
+  color: white;
+}
+
+/* Sarlavhalar */
+h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  color: white;
+}
+
+h2, h3 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--asosiy);
+}
+
+h2 { font-size: 30px; }
+
+h3 {
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* Matn belgilari */
+p { font-size: 18px; }
+
+strong { font-weight: 600; }
+
+em { font-style: italic; }
+
+mark {
+  background-color: rgba(138, 75, 42, 0.25);
+  color: var(--asosiy);
+}
+
+blockquote {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--aksent);
+}
+
+abbr {
+  text-decoration: underline dotted;
+  letter-spacing: 1px;
+}
+
+/* Class selektori: izohlar */
+.izoh {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(35, 64, 58, 0.75);
+}
+
+/* Id selektori: aloqa bo'limi */
+#aloqa {
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Havolalar */
+a {
+  color: var(--aksent);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--asosiy);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(138, 75, 42, 0.7);
+}
+
+/* Navigatsiya (avlod selektori) */
+nav a {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--fon);
+  text-decoration: underline;
+}
+
+nav a:visited {
+  color: white;
+}
+
+/* Ro'yxatlar */
+dt {
+  font-weight: 700;
+}
+
+dd {
+  font-style: italic;
+}
+
+/* Sahifa oxiri */
+footer {
+  background-color: var(--asosiy);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
