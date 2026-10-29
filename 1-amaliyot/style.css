@@ -1,16 +1,9 @@
-/* ==========================================================
-   Mehr Boshpana — 1-amaliy ish (matn ko'rinishi)
-   Palitra: white, #23403a, #8a4b2a, #f3ead9
-   ========================================================== */
-
-/* Ranglar (CSS o'zgaruvchilari) */
 :root {
-  --asosiy: #23403a;   /* to'q yashil — matn va sarlavha foni */
-  --aksent: #8a4b2a;   /* jigarrang — havolalar */
-  --fon: #f3ead9;      /* och qum rang — sahifa foni */
+  --asosiy: #23403a;
+  --aksent: #8a4b2a;
+  --fon: #f3ead9;
 }
 
-/* Umumiy (teg selektori) */
 body {
   background-color: var(--fon);
   color: var(--asosiy);
@@ -21,13 +14,11 @@ body {
   text-align: left;
 }
 
-/* Sarlavha qismi */
 header {
   background-color: var(--asosiy);
   color: white;
 }
 
-/* Sarlavhalar */
 h1 {
   font-family: 'Fraunces', Georgia, serif;
   font-size: 44px;
@@ -51,7 +42,6 @@ h3 {
   font-style: italic;
 }
 
-/* Matn belgilari */
 p { font-size: 18px; }
 
 strong { font-weight: 600; }
@@ -75,20 +65,17 @@ abbr {
   letter-spacing: 1px;
 }
 
-/* Class selektori: izohlar */
 .izoh {
   font-size: 14px;
   font-style: italic;
   color: rgba(35, 64, 58, 0.75);
 }
 
-/* Id selektori: aloqa bo'limi */
 #aloqa {
   font-weight: 600;
   text-align: left;
 }
 
-/* Havolalar */
 a {
   color: var(--aksent);
   text-decoration: underline;
@@ -103,7 +90,6 @@ a:visited {
   color: rgba(138, 75, 42, 0.7);
 }
 
-/* Navigatsiya (avlod selektori) */
 nav a {
   color: white;
   font-weight: 600;
@@ -120,7 +106,6 @@ nav a:visited {
   color: white;
 }
 
-/* Ro'yxatlar */
 dt {
   font-weight: 700;
 }
@@ -129,7 +114,6 @@ dd {
   font-style: italic;
 }
 
-/* Sahifa oxiri */
 footer {
   background-color: var(--asosiy);
   color: white;
