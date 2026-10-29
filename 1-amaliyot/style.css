@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --asosiy: #23403a;
   --aksent: #8a4b2a;
@@ -5,6 +9,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--fon);
   color: var(--asosiy);
   font-family: 'Source Sans 3', Arial, sans-serif;
@@ -14,14 +19,43 @@ body {
   text-align: left;
 }
 
+.konteyner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: var(--asosiy);
   color: white;
 }
 
+.sarlavha-ichi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1 {
+  margin: 0;
   font-family: 'Fraunces', Georgia, serif;
-  font-size: 44px;
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: -1px;
   line-height: 1.1;
@@ -35,11 +69,12 @@ h2, h3 {
   color: var(--asosiy);
 }
 
-h2 { font-size: 30px; }
+h2 { font-size: 30px; margin: 40px 0 16px; }
 
 h3 {
   font-size: 22px;
   font-style: italic;
+  margin: 0 0 8px;
 }
 
 p { font-size: 18px; }
@@ -54,6 +89,7 @@ mark {
 }
 
 blockquote {
+  margin: 16px 0;
   font-family: 'Fraunces', Georgia, serif;
   font-size: 22px;
   font-style: italic;
@@ -75,6 +111,22 @@ abbr {
   font-weight: 600;
   text-align: left;
 }
+
+.markaz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.shior {
+  min-height: 140px;
+  padding: 16px 24px;
+  background-color: rgba(35, 64, 58, 0.08);
+  border-radius: 12px;
+}
+
+.shior p { margin: 0; }
 
 a {
   color: var(--aksent);
@@ -106,19 +158,216 @@ nav a:visited {
   color: white;
 }
 
-dt {
-  font-weight: 700;
+.karta {
+  position: relative;
+  margin: 0 0 16px;
+  padding: 20px 24px;
+  background-color: white;
+  border: 1px solid rgba(35, 64, 58, 0.25);
+  border-radius: 12px;
 }
 
+.karta:hover {
+  border-color: var(--aksent);
+}
+
+.karta p:last-child { margin-bottom: 0; }
+
+.kartalar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.kartalar .karta {
+  flex: 1 1 280px;
+  margin: 0;
+}
+
+.belgi {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  padding: 2px 12px;
+  background-color: var(--aksent);
+  border-radius: 12px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.yon-blok {
+  margin-top: 16px;
+}
+
+dt { font-weight: 700; }
+
 dd {
+  margin-left: 0;
   font-style: italic;
 }
 
+.rasmlar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rasmlar figure {
+  flex: 1 1 280px;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.jadval-orami {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+caption {
+  padding: 8px;
+  font-style: italic;
+  text-align: left;
+}
+
+th, td {
+  padding: 10px 14px;
+  border: 1px solid rgba(35, 64, 58, 0.25);
+  text-align: left;
+}
+
+thead th {
+  background-color: var(--asosiy);
+  color: white;
+}
+
+.maydon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 0 16px;
+  padding: 0;
+  border: none;
+}
+
+label, legend {
+  font-weight: 600;
+}
+
+input, select, textarea {
+  padding: 10px 12px;
+  background-color: white;
+  border: 1px solid rgba(35, 64, 58, 0.5);
+  border-radius: 8px;
+  color: var(--asosiy);
+  font-family: inherit;
+  font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: 2px solid var(--aksent);
+}
+
+.radio-qator,
+.belgi-qator {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 0 0 16px;
+}
+
+.radio-qator { margin-bottom: 0; }
+
+button {
+  padding: 12px 24px;
+  background-color: var(--asosiy);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--aksent);
+}
+
+.xarita {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: none;
+  border-radius: 12px;
+}
+
+.yuqoriga {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 100;
+  padding: 10px 16px;
+  background-color: var(--aksent);
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.yuqoriga:hover {
+  background-color: var(--asosiy);
+  color: white;
+}
+
+.yuqoriga:visited {
+  color: white;
+}
+
 footer {
+  margin-top: 48px;
+  padding: 24px 0;
   background-color: var(--asosiy);
   color: white;
   font-size: 14px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+}
+
+.footer-ichi {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer p {
+  margin: 0 0 4px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+footer a,
+footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  color: var(--fon);
 }

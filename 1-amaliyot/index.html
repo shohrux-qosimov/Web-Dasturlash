@@ -1,84 +1,162 @@
-<header id="yuqori">
-    <h1>Uy-Hayvonlari Boshpanasi</h1>
-    <nav>
-        <ul>
-            <li><a href="amaliy1.html">Bosh sahifa</a></li>
-            <li><a href="batafsil.html">Batafsil ma'lumot</a></li>
-            <li><a href="#biz-haqimizda">Biz haqimizda</a></li>
-            <li><a href="#aloqa">Aloqa</a></li>
-        </ul>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mehr Boshpana — Urganch shahridagi uy hayvonlari boshpanasi: biz haqimizda, hayvonlar, xizmatlar va aloqa.">
+  <title>Mehr Boshpana — Urganch uy hayvonlari boshpanasi</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Tashqi CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<main>
-    <section id="biz-haqimizda">
-        <h2>Bizning ezgu maqsadimiz va faoliyatimiz</h2>
-        <p>
-            Bizning boshpanamiz Urganch shahrida joylashgan bo'lib, mehrsiz qolgan va qarovsiz qolgan hayvonlarga ikkinchi imkoniyat berish bilan shug'ullanadi. 
-            Har bir jonivor e'tibor va sevchiga loyiqdir. Biz ularni davolaymiz, emlaymiz va yangi mehirli <mark>oila topishiga</mark> ko'maklashamiz.
-        </p>
-        <p>
-            Hozirda boshpanamizda <strong>50 dan ortiq</strong> itlar va mushuklar yashamoqda. Ularning salomatligi tajribali <abbr title="Veterinariya Shifokori">VET</abbr> shifokorlarimiz tomonidan doimiy nazorat qilinadi.
-        </p>
-        <blockquote>
-            <em>"Hayvonlarga bo'lgan munosabat insoniyatning ma'naviy darajasini ko'rsatadi."</em>
-        </blockquote>
+  <!-- Sahifa boshi va navigatsiya (barcha sahifalarda bir xil) -->
+  <header id="yuqori">
+    <div class="konteyner sarlavha-ichi">
+      <h1>Mehr Boshpana</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="batafsil.html">Asrab olish tartibi</a></li>
+          <li><a href="aloqa.html">Ariza berish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="konteyner">
+
+    <!-- 1-bo'lim: biz haqimizda -->
+    <section>
+      <h2>Biz haqimizda</h2>
+      <blockquote class="shior markaz">
+        <p>Hayvonni asrab olish — uning butun hayotini o'zgartirish.</p>
+      </blockquote>
+      <p>
+        <strong>Mehr Boshpana</strong> — Urganch shahrida ko'chada qolgan mushuk va itlarga
+        vaqtinchalik uy bo'lib xizmat qiladigan <em>mustaqil</em> boshpana. Biz hayvonlarni
+        davolaymiz, emlaymiz va ularga yangi oila topishga yordam beramiz.
+      </p>
+      <p>
+        Boshpana Xorazm viloyati markazida, <mark>Al-Xorazmiy ko'chasi</mark> yaqinida joylashgan
+        (manzil namuna uchun berilgan). Hozir bizda 40 ga yaqin hayvon bor, ularning uchdan bir qismi
+        kuchukchalar va mushukchalardir.
+      </p>
+
+      <h3>Bizning kunimiz</h3>
+      <p>
+        Ertalab soat 8:00 da hayvonlar ovqatlanadi, so'ng ular uchun ochiq maydonda sayr vaqti
+        boshlanadi. Maydonning umumiy yuzasi 200&nbsp;m<sup>2</sup> ni tashkil qiladi, kechqurun
+        esa har bir hayvon o'z joyiga qaytadi.
+      </p>
+      <p>
+        Boshpana ishi <abbr title="Nodavlat notijorat tashkiloti">NNT</abbr> tamoyillariga
+        asoslanadi va ko'ngillilar yordamida davom etadi.
+      </p>
+      <p class="izoh">
+        Bu sahifa o'quv loyihasi doirasida tayyorlangan; ma'lumotlar namunaviy.
+      </p>
     </section>
 
+    <!-- 2-bo'lim: kartalar qatori (flex-wrap) -->
     <section>
-        <h2>Boshpanamizdagi asosiy hayvonlar turlari</h2>
-        <p>
-            Biz asosan qarovsiz qolgan uy hayvonlarini qabul qilamiz va ularni parvarishlaymiz. Jonivorlar ro'yxati quyidagicha:
-        </p>
-        <ul>
-            <li>
-                Itlar (Har xil zotdor va mahalliy itlar)
-                <ol>
-                    <li>Kuchukchalar (1 yoshgacha)</li>
-                    <li>Katta yoshli itlar</li>
-                </ol>
-            </li>
-            <li>Mushuklar va ularning bolalari</li>
-            <li>Jarohatlangan va maxsus parvarishga muhtoj jonivorlar</li>
-        </ul>
+      <h2>Bizning hayvonlar</h2>
+      <div class="kartalar">
+        <article class="karta">
+          <h3>Mushuklar</h3>
+          <p>Tinch va mehribon mushuklar. Hammasi emlangan va sterilizatsiya qilingan.</p>
+        </article>
+        <article class="karta">
+          <span class="belgi">Yangi</span>
+          <h3>Kuchukchalar</h3>
+          <p>Bu oy tug'ilgan sakkizta kuchukcha yangi oila kutmoqda.</p>
+        </article>
+        <article class="karta">
+          <h3>Katta itlar</h3>
+          <p>Himoyachi va sodiq itlar, hovlisi bor oilalar uchun juda mos.</p>
+        </article>
+      </div>
     </section>
 
+    <!-- 3-bo'lim: media (figure + figcaption) -->
     <section>
-        <h2>Boshpana atamalari va qoidalari</h2>
-        <p>
-            Boshpanamiz faoliyatiga oid ba'zi muhim tushunchalar bilan tanishing:
-        </p>
+      <h2>Galereya</h2>
+      <div class="rasmlar">
+        <figure>
+          <img src="rasmlar/mushuk.jpg" alt="Boshpanadagi kulrang mushuk deraza yonida o'tiribdi">
+          <figcaption>Kulrang mushuk Mosh — yangi uy kutmoqda.</figcaption>
+        </figure>
+        <figure>
+          <img src="rasmlar/kuchuk.jpg" alt="Maydonda o'ynayotgan jigarrang kuchukcha">
+          <figcaption>Kuchukcha Qora ochiq maydonda sayr paytida.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 4-bo'lim: ichma-ich ro'yxat va yon blok -->
+    <section>
+      <h2>Xizmatlarimiz</h2>
+      <article class="karta">
+        <ul>
+          <li>Hayvonlarni asrab olish
+            <ul>
+              <li>Mushuklar va mushukchalar</li>
+              <li>Itlar va kuchukchalar</li>
+            </ul>
+          </li>
+          <li>Veterinariya ko'rigi va emlash</li>
+          <li>Ko'ngillilar dasturi</li>
+          <li>Vaqtinchalik boqish (ushlab turish)</li>
+        </ul>
+      </article>
+
+      <aside class="karta yon-blok">
+        <h3>Foydali atamalar</h3>
         <dl>
-            <dt>Asrab olish (Adopsiya)</dt>
-            <dd>Boshpanadagi hayvonni o'z qaramog'iga mas'uliyat bilan bepul topshirib olish jarayoni.</dd>
-            
-            <dt>Vaqtinchalik saqlash (Fostering)</dt>
-            <dd>Jonivor doimiy ega topgunga qadar uni vaqtincha o'z uyida parvarishlab turish.</dd>
-            
-            <dt>Ko'ngilli (Volontyor)</dt>
-            <dd>Boshpanadagi hayvonlarni sayr qildirish, ovqatlantirish va tozalash ishlariga xolis yordam beruvchi shaxs.</dd>
+          <dt>Sterilizatsiya</dt>
+          <dd>Hayvonning ko'payish qobiliyatini jarrohlik yo'li bilan to'xtatish.</dd>
+          <dt>Emlash</dt>
+          <dd>Hayvonni xavfli kasalliklardan himoya qiluvchi vaksina yuborish.</dd>
+          <dt>Karantin</dt>
+          <dd>Yangi kelgan hayvonni boshqalardan ajratib, sog'lig'ini kuzatish davri.</dd>
         </dl>
         <p>
-            Siz ham ushbu ezgu ishga o'z hissangizni qo'shishingiz mumkin. Yordam turlari haqida batafsil ma'lumot olish uchun <a href="https://uzbekistan.un.org" target="_blank" rel="noopener">xalqaro xayriya standartlari</a> bilan tanishib chiqishingiz mumkin.
+          Tashqi manba: <a href="https://uz.wikipedia.org/wiki/Urganch" target="_blank" rel="noopener">Urganch haqida Vikipediya maqolasi</a>.
         </p>
+      </aside>
     </section>
 
+    <!-- 5-bo'lim: aloqa -->
     <section id="aloqa">
-        <h2>Biz bilan bog'lanish va manzil</h2>
-        <h3>Joylashuvimiz va kontaktlar</h3>
-        <p>
-            Bizning boshpanamiz Xorazm viloyati, Urganch shahri, Al-Xorazmiy ko'chasi 12-uy manzilida joylashgan.
-        </p>
-        <p>
-            Telefon: <a href="tel:+998622230000">+998 (62) 223-00-00</a><br>
-            E-pochta: <a href="mailto:info@mehribonyuraklar.uz">info@mehribonyuraklar.uz</a>
-        </p>
-        <p>
-            Barcha huquqlar himoyalangan &copy; 2026 "Mehribon Yuraklar" boshpanasi. &lt;Mehr bergan insondan baraka arimaydi&gt;
-        </p>
+      <h2>Aloqa</h2>
+      <p>
+        Savollaringiz bo'lsa, yozing: <a href="mailto:info@mehrboshpana.example">info@mehrboshpana.example</a>
+      </p>
+      <p>
+        Yoki qo'ng'iroq qiling: <a href="tel:+998620000000">+998 62 000 00 00</a>
+      </p>
     </section>
-</main>
 
-<footer>
-    <p><a href="#yuqori">Yuqoriga qaytish &uarr;</a></p>
-</footer>
+  </main>
+
+  <!-- Qo'zg'almas «Yuqoriga» tugmasi -->
+  <a class="yuqoriga" href="#yuqori">Yuqoriga</a>
+
+  <footer>
+    <div class="konteyner footer-ichi">
+      <div>
+        <p>&copy; 2026 Mehr Boshpana. Barcha huquqlar himoyalangan.</p>
+      </div>
+      <div>
+        <p>Urganch shahri, Xorazm viloyati</p>
+        <p><a href="tel:+998620000000">+998 62 000 00 00</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
