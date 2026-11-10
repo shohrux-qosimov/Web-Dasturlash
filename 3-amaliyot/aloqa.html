@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mehr Boshpana'dan hayvon asrab olish uchun ariza formasi va boshpana joylashuvi.">
+  <title>Asrab olish arizasi — Mehr Boshpana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="yuqori">
+    <div class="konteyner sarlavha-ichi">
+      <h1>Asrab olish arizasi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="batafsil.html">Asrab olish tartibi</a></li>
+          <li><a href="aloqa.html">Ariza berish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="konteyner">
+
+    <!-- Forma -->
+    <section>
+      <h2>Ariza formasi</h2>
+      <article class="karta">
+        <form method="post">
+
+          <div class="maydon">
+            <label for="ism">To'liq ismingiz</label>
+            <input type="text" id="ism" name="ism" required>
+          </div>
+
+          <div class="maydon">
+            <label for="email">Elektron pochta</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="maydon">
+            <label for="telefon">Telefon raqami</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="+998901234567"
+                   pattern="\+998[0-9]{9}" title="Format: +998901234567" required>
+          </div>
+
+          <div class="maydon">
+            <label for="yosh">Yoshingiz</label>
+            <input type="number" id="yosh" name="yosh" min="18" max="90">
+          </div>
+
+          <div class="maydon">
+            <label for="sana">Tashrif sanasi</label>
+            <input type="date" id="sana" name="sana">
+          </div>
+
+          <fieldset class="maydon">
+            <legend>Qaysi hayvonni asrab olmoqchisiz?</legend>
+            <div class="radio-qator">
+              <input type="radio" id="mushuk" name="hayvon" value="mushuk" checked>
+              <label for="mushuk">Mushuk</label>
+              <input type="radio" id="it" name="hayvon" value="it">
+              <label for="it">It</label>
+            </div>
+          </fieldset>
+
+          <div class="maydon">
+            <label for="uy">Yashash joyingiz</label>
+            <select id="uy" name="uy">
+              <option value="hovli">Hovlili uy</option>
+              <option value="kvartira">Kvartira</option>
+            </select>
+          </div>
+
+          <div class="maydon">
+            <label for="tajriba">Hayvon boqish tajribangiz</label>
+            <textarea id="tajriba" name="tajriba" rows="4"></textarea>
+          </div>
+
+          <div class="belgi-qator">
+            <input type="checkbox" id="rozilik" name="rozilik" required>
+            <label for="rozilik">Uy sharoitini tekshirishga roziman</label>
+          </div>
+
+          <button type="submit">Arizani yuborish</button>
+        </form>
+      </article>
+
+      <aside class="karta yon-blok">
+        <h3>Qabul vaqti</h3>
+        <p>Dushanba–shanba, soat 9:00 dan 17:00 gacha (namunaviy).</p>
+        <p>
+          <a href="mailto:info@mehrboshpana.example">info@mehrboshpana.example</a><br>
+          <a href="tel:+998620000000">+998 62 000 00 00</a>
+        </p>
+      </aside>
+    </section>
+
+    <!-- Xarita -->
+    <section>
+      <h2>Qayerdamiz</h2>
+      <iframe class="xarita" title="Urganch shahrining Google xaritasi"
+              src="https://www.google.com/maps?q=Urganch&amp;output=embed"
+              loading="lazy"></iframe>
+    </section>
+
+  </main>
+
+  <a class="yuqoriga" href="#yuqori">Yuqoriga</a>
+
+  <footer>
+    <div class="konteyner footer-ichi">
+      <div>
+        <p>&copy; 2026 Mehr Boshpana. Barcha huquqlar himoyalangan.</p>
+      </div>
+      <div>
+        <p>Urganch shahri, Xorazm viloyati</p>
+        <p><a href="tel:+998620000000">+998 62 000 00 00</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
